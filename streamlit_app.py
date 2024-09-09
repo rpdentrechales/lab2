@@ -1,5 +1,7 @@
 
 import streamlit as st
 
-title = st.text_input("Movie title", "Life of Brian")
-st.write("The current movie title is", title)
+numero_1 = st.text_input("escreve um número")
+st.write("+")
+numero_2 = st.text_input("escreve um número")
+st.write(f"{numero_1} + {numero_2} = {int(numero_1) + int(numero_1)}")
