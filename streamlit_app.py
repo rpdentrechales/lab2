@@ -1,6 +1,8 @@
 
 import streamlit as st
 
+st.title("Minha calculadora")
+
 numero_1 = st.text_input("escreve um número 1")
 operacao = st.selectbox(
     "Selecione a operação",
