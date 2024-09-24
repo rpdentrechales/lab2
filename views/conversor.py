@@ -19,4 +19,4 @@ with col_1:
   valor_para_conversao = st.number_input("Selecione o valor para converter",min_value=0)
 
 with col_2:
-  st.markdown("# R$ 100")
+  st.markdown("## R$ 100")
