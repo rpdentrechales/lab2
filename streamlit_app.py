@@ -3,7 +3,7 @@ import streamlit as st
 
 # --- PAGE SETUP ---
 calculadora_page = st.Page(
-    "views/caculadora.py",
+    "views/calculadora.py",
     title="Consultoria - Pró-Corpo",
     icon=":material/overview:",
 )
