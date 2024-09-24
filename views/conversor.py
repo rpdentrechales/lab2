@@ -22,8 +22,8 @@ with col_1:
   conversao_moeda_1 = dados["rates"][seletor_moeda_1]
   conversao_moeda_2 = dados["rates"][seletor_moeda_2]
 
-  valor_para_conversao = st.number_input("Selecione o valor para converter",format="%0.2f")
-
 with col_2:
+
+  valor_para_conversao = st.number_input("Selecione o valor para converter",format="%0.2f")
   valor_convertido = (valor_para_conversao * conversao_moeda_2)/conversao_moeda_1
   st.markdown(f"## :red[{seletor_moeda_2} {valor_convertido:0.2f}]")
