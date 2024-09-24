@@ -17,7 +17,7 @@ col_1,col_2 = st.columns(2)
 
 with col_1:
   seletor_moeda_1 = st.selectbox("Selecione uma moeda de",siglas_moedas,index=0)
-  seletor_moeda_2 = st.selectbox("Selecione uma moeda para",siglas_moedas,index=21)
+  seletor_moeda_2 = st.selectbox("Selecione uma moeda para",siglas_moedas,index=20)
   valor_para_conversao = st.number_input("Selecione o valor para converter",format="%0.2f")
 
 with col_2:
