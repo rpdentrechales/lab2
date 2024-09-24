@@ -4,13 +4,13 @@ import streamlit as st
 # --- PAGE SETUP ---
 calculadora_page = st.Page(
     "views/calculadora.py",
-    title="Consultoria - Pró-Corpo",
+    title="Calculadora",
     icon=":material/overview:",
 )
 
 conversor_page = st.Page(
     "views/conversor.py",
-    title="Área Logada",
+    title="Conversor",
     icon=":material/overview:",
 )
 
