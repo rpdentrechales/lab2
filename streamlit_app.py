@@ -1,24 +1,33 @@
 
 import streamlit as st
 
-st.title("Minha calculadora")
-
-numero_1 = st.text_input("escreve um número 1")
-operacao = st.selectbox(
-    "Selecione a operação",
-    ("Soma", "Subtração", "Multiplicação","Divisão")
+# --- PAGE SETUP ---
+calculadora_page = st.Page(
+    "views/caculadora.py",
+    title="Consultoria - Pró-Corpo",
+    icon=":material/overview:",
 )
-numero_2 = st.text_input("escreve um número 2")
 
-if numero_1 and numero_2:
-  numero_1 = int(numero_1)
-  numero_2 = int(numero_2)
-  
-  if operacao == "Soma":
-    st.write(f"{numero_1} + {numero_2} = {numero_1 + numero_2}")
-  elif operacao == "Subtração":
-    st.write(f"{numero_1} - {numero_2} = {numero_1 - numero_2}")
-  elif operacao == "Multiplicação":
-    st.write(f"{numero_1} * {numero_2} = {numero_1 * numero_2}")
-  elif operacao == "Divisão":
-    st.write(f"{numero_1} / {numero_2} = {numero_1 / numero_2}")
+conversor_page = st.Page(
+    "views/conversor.py",
+    title="Área Logada",
+    icon=":material/overview:",
+)
+
+
+# --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
+# pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
+
+# --- NAVIGATION SETUP [WITH SECTIONS]---
+pg = st.navigation(
+    {
+        "Aplicativos": [calculadora_page,conversor_page]
+    }
+)
+
+
+# --- SHARED ON ALL PAGES ---
+# st.logo("assets/codingisfun_logo.png")
+
+# --- RUN NAVIGATION ---
+pg.run()
