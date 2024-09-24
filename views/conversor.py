@@ -19,12 +19,12 @@ with col_1:
   seletor_moeda_1 = st.selectbox("Selecione uma moeda de",siglas_moedas,index=0)
   valor_para_conversao = st.number_input("Selecione o valor para converter",format="%0.2f")
 
-  conversao_moeda_1 = dados["rates"][seletor_moeda_1]
-  conversao_moeda_2 = dados["rates"][seletor_moeda_2]
-
 with col_2:
 
   seletor_moeda_2 = st.selectbox("Selecione uma moeda para",siglas_moedas,index=20)
+  
+  conversao_moeda_1 = dados["rates"][seletor_moeda_1]
+  conversao_moeda_2 = dados["rates"][seletor_moeda_2]
   
   valor_convertido = (valor_para_conversao * conversao_moeda_2)/conversao_moeda_1
   st.markdown(f"## :red[{seletor_moeda_2} {valor_convertido:0.2f}]")
