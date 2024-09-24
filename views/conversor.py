@@ -14,6 +14,6 @@ st.title("Conversor de moeda")
 col_1,col_2 = st.columns(2)
 
 with col_1:
-  seletor_moeda_1 = st.selectbox("Selecione uma moeda",["moeda_1","moeda_2"])
-  seletor_moeda_2 = st.selectbox("Selecione uma moeda",["moeda_1","moeda_2"])
+  seletor_moeda_1 = st.selectbox("Selecione uma moeda 1",["moeda_1","moeda_2"])
+  seletor_moeda_2 = st.selectbox("Selecione uma moeda 2",["moeda_1","moeda_2"])
 
