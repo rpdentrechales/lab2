@@ -25,7 +25,5 @@ with col_1:
   valor_para_conversao = st.number_input("Selecione o valor para converter",format="%0.2f")
 
 with col_2:
-  st.markdown("## R$ 100")
-
-  st.write(conversao_moeda_1)
-  st.write(conversao_moeda_2)
+  valor_convertido = (valor_para_conversao * conversao_moeda_2)/conversao_moeda_1
+  st.markdown(f"## {seletor_moeda_2} {valor_convertido}")
