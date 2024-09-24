@@ -27,4 +27,4 @@ with col_2:
   conversao_moeda_2 = dados["rates"][seletor_moeda_2]
   
   valor_convertido = (valor_para_conversao * conversao_moeda_2)/conversao_moeda_1
-  st.markdown(f"## :red[{seletor_moeda_2} {valor_convertido:0.2f}]")
+  st.markdown(f"## {seletor_moeda_2} {valor_convertido:0.2f}")
