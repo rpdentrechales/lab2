@@ -21,3 +21,4 @@ else:
 st.write(st.session_state["palavra_secreta"])
 
 st.button("TESTE")
+st.button("Limpar Sessão",on_click=st.session_state.clear())
