@@ -11,6 +11,13 @@ with open('dados/palavras.txt', 'r') as palavras_file:
 
 st.title("Jogo da Forca")
 palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
-st.write(palavra_secreta)
+
+
+if "palavra_secreta" in st.session_state:
+  pass
+else:
+  st.session_state["palavra_secreta"] = palavra_secreta
+
+st.write(st.session_state["palavra_secreta"])
 
 st.button("TESTE")
