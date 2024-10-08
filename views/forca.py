@@ -12,3 +12,5 @@ with open('dados/palavras.txt', 'r') as palavras_file:
 st.title("Jogo da Forca")
 palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
 st.write(palavra_secreta)
+
+st.button("TESTE")
