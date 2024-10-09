@@ -12,7 +12,6 @@ with open('dados/palavras.txt', 'r') as palavras_file:
 st.title("Jogo da Forca")
 palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
 
-
 if "palavra_secreta" in st.session_state:
   pass
 else:
@@ -21,4 +20,9 @@ else:
 st.write(st.session_state["palavra_secreta"])
 
 st.button("TESTE")
+
 st.button("Limpar Sessão",on_click=st.session_state.clear())
+
+
+# You can read query params using key notation
+st.write(st.query_params["teste"])
