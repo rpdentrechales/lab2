@@ -63,9 +63,8 @@ st.title("Exemplo do zero!")
 if 'contador' not in st.session_state:
   st.session_state['contador'] = 0
 
-contador = st.session_state['contador']
-
 if st.button("Exemplo"):
-  contador+=1
-
+  st.session_state['contador']+=1
+  contador = st.session_state['contador']
+  
 st.write(f"Contador: {contador}")
