@@ -73,3 +73,4 @@ st.write(f"Contador: {st.session_state['contador']}")
 
 if st.button("Reseta o Contador"):
   st.session_state['contador'] = 0
+  st.write("Contador resetado")
