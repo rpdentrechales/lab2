@@ -10,15 +10,12 @@ with open('dados/palavras.txt', 'r') as palavras_file:
         lista_palavras.append(line.strip())
 
 st.title("Jogo da Forca")
-palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
 
-if "palavra_secreta" in st.session_state:
-  pass
-else:
+
+if "palavra_secreta" not in st.session_state:
+  palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
   st.session_state["palavra_secreta"] = palavra_secreta
 
 st.write(st.session_state["palavra_secreta"])
 
-st.button("TESTE")
-
-st.button("Limpar Sessão",on_click=st.session_state.clear())
+st.button("Começar o Jogo")
