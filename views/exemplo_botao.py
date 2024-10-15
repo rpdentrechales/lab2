@@ -60,5 +60,9 @@ if st.button("Compute Square"):
 
 st.title("Exemplo do zero!")
 
+contador = 0
+
 if st.button("Exemplo"):
-  st.write("Você clicou no botão")
+  contador+=1
+
+st.write(f"Contador: {contador}")
