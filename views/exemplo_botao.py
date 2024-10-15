@@ -57,13 +57,16 @@ if st.button("Compute Square"):
     st.write(f"The square of {number} is {result}")
 
 
-
 st.title("Exemplo do zero!")
+
+st.write(st.session_state)
 
 if 'contador' not in st.session_state:
   st.session_state['contador'] = 0
 
-if st.button("Exemplo"):
+st.write(st.session_state)
+
+if st.button("Incrementar contador"):
   st.session_state['contador']+=1
 
 st.write(f"Contador: {st.session_state['contador']}")
