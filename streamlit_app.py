@@ -20,6 +20,12 @@ forca_page = st.Page(
     icon=":material/overview:",
 )
 
+botao_page = st.Page(
+    "views/exemplo_botao.py",
+    title="Exemplo Botão",
+    icon=":material/overview:",
+)
+
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
@@ -27,7 +33,7 @@ forca_page = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "Aplicativos": [calculadora_page,conversor_page,forca_page]
+        "Aplicativos": [calculadora_page,conversor_page,forca_page,botao_page]
     }
 )
 
