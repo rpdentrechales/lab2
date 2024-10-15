@@ -70,3 +70,6 @@ if st.button("Incrementar contador"):
   st.session_state['contador']+=1
 
 st.write(f"Contador: {st.session_state['contador']}")
+
+if st.button("Reseta o Contador"):
+  st.session_state['contador'] = 0
