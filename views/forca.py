@@ -18,4 +18,6 @@ if "palavra_secreta" not in st.session_state:
 
 st.write(st.session_state["palavra_secreta"])
 
-st.button("Começar o Jogo")
+if st.button("Mudar Palavra"):
+  palavra_secreta = random.choice(lista_palavras) # Selecionar uma palavra aleatória
+  st.session_state["palavra_secreta"] = palavra_secreta 
