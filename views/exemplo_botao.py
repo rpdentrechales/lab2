@@ -65,6 +65,5 @@ if 'contador' not in st.session_state:
 
 if st.button("Exemplo"):
   st.session_state['contador']+=1
-  contador = st.session_state['contador']
-  
-st.write(f"Contador: {contador}")
+
+st.write(f"Contador: {st.session_state['contador']}")
