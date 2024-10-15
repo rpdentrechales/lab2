@@ -39,3 +39,19 @@ if st.button("Perform Multiple Actions"):
     st.session_state['count'] += 1
     st.session_state['toggle'] = not st.session_state['toggle']
     st.write(f"Counter incremented to {st.session_state['count']}. Toggle is now {'ON' if st.session_state['toggle'] else 'OFF'}.")
+
+
+# Function that will be triggered by the button
+def compute_square(number):
+    return number ** 2
+
+# Title for the app
+st.title("Button Example with Function Execution")
+
+# Input to get a number from the user
+number = st.number_input("Enter a number", value=1)
+
+# Button to trigger the function
+if st.button("Compute Square"):
+    result = compute_square(number)
+    st.write(f"The square of {number} is {result}")
