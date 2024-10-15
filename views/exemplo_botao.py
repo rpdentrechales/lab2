@@ -55,3 +55,9 @@ number = st.number_input("Enter a number", value=1)
 if st.button("Compute Square"):
     result = compute_square(number)
     st.write(f"The square of {number} is {result}")
+
+
+
+st.title("Exemplo do zero!")
+
+st.button("Exemplo")
