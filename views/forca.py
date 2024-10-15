@@ -22,7 +22,3 @@ st.write(st.session_state["palavra_secreta"])
 st.button("TESTE")
 
 st.button("Limpar Sessão",on_click=st.session_state.clear())
-
-
-# You can read query params using key notation
-st.write(st.query_params["teste"])
