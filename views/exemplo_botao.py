@@ -4,8 +4,12 @@ import random
 # Title for the app
 st.title("Button Demonstration")
 
-numero_aleatorio = random.randint(1,10)
+if "numero_aleatorio" in st.session_state:
+  pass
+else:
+  st.session_state["numero_aleatorio"] = random.randint(1,10)
 
+numero_aleatorio = st.session_state["numero_aleatorio"]
 
 if st.button("Click Me"):
   st.markdown(f"# {numero_aleatorio}")
