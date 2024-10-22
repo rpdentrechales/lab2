@@ -12,3 +12,7 @@ else:
 
 if st.button("Click Me"):
   st.markdown(f"# {st.session_state["numero_aleatorio"]}")
+
+if st.button("Trocar variável"):
+  st.session_state["numero_aleatorio"] = random.randint(1,10)
+  st.write(f"variavel trocada para {st.session_state["numero_aleatorio"]}")
