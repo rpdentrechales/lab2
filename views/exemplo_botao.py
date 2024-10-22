@@ -9,7 +9,6 @@ if "numero_aleatorio" in st.session_state:
 else:
   st.session_state["numero_aleatorio"] = random.randint(1,10)
 
-numero_aleatorio = st.session_state["numero_aleatorio"]
 
 if st.button("Click Me"):
-  st.markdown(f"# {numero_aleatorio}")
+  st.markdown(f"# {st.session_state["numero_aleatorio"]}")
