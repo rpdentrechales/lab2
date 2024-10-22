@@ -6,5 +6,6 @@ st.title("Button Demonstration")
 
 numero_aleatorio = random.randint(1,10)
 
-# Create a button
-st.markdown(f"# {numero_aleatorio}")
+
+if st.button("Click Me"):
+  st.markdown(f"# {numero_aleatorio}")
