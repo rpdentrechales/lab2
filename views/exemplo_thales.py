@@ -13,4 +13,7 @@ dados_exemplo = {"Coluna_1": [1,2,3,4,5,6,7,8],
 
 df = pd.DataFrame(dados_exemplo)
 
+colunas = df.columns.unique()
+st.selectbox("Selecione a coluna",colunas)
+
 st.dataframe(df)
