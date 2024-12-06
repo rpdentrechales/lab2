@@ -28,7 +28,7 @@ botao_page = st.Page(
 
 exemplo_thales = st.Page(
     "views/exemplo_thales.py",
-    title="Exemplo Botão",
+    title="Exemplo Thales",
     icon=":material/overview:",
 )
 
