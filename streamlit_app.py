@@ -39,7 +39,7 @@ exemplo_thales = st.Page(
 # --- NAVIGATION SETUP [WITH SECTIONS]---
 pg = st.navigation(
     {
-        "Aplicativos": [calculadora_page,conversor_page,forca_page,botao_page]
+        "Aplicativos": [calculadora_page,conversor_page,forca_page,botao_page,exemplo_thales]
     }
 )
 
