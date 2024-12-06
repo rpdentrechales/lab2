@@ -26,6 +26,12 @@ botao_page = st.Page(
     icon=":material/overview:",
 )
 
+exemplo_thales = st.Page(
+    "views/exemplo_thales.py",
+    title="Exemplo Botão",
+    icon=":material/overview:",
+)
+
 
 # --- NAVIGATION SETUP [WITHOUT SECTIONS] ---
 # pg = st.navigation(pages=[about_page, project_1_page, project_2_page])
