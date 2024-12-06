@@ -22,4 +22,4 @@ groupby_df = pd.DataFrame(df.groupby(colunas_groupby).sum())
 colunas_2 = groupby_df.columns.unique()
 colunas_groupby = st.multiselect("Selecione a coluna dataframe",colunas)
 
-st.dataframe(groupby_df[colunas_2])
+st.dataframe(groupby_df[[colunas_2]])
